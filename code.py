@@ -30,4 +30,3 @@ theta_NaNs_interpolated = theta_NaNs.interpolate(method='linear') #interpolating
 
 #based on test 2, this will be produced as the value for theta_old
 theta_old = theta_NaNs_interpolated.values.reshape(-1, 1) #putting theta_old into a form that can be used in calculations
-print(theta_old)
