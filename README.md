@@ -1,3 +1,15 @@
+Domain Definition and Model Setup:
+
+This section defines the spatial and temporal domain for the model and sets up the core parameters and data structures required for the finite difference scheme.
+
+The function 'define_domain()' creates the spatial grid representing distance along the river and the temporal grid representing the simulation time. The domain limits and step sizes are defined as function arguments, allowing the domain to be easily modified if required. 
+
+Model parameters are stored using 'define_parameters()', which currently returns the advection velocity 'U'.
+
+Initial arrays for pollutant concentration are created using 'initialise_arrays()', which generates empty arrays for the concentration at the previous and next time steps. 
+
+The function 'build_fd_coefficients()' constructs the matrices and vectors required for the finite difference update step based on the spatial and temporal resolution and model parameters. These outputs are used by later stages of the model, including initial condition interpolation and time-stepping. 
+
 Importing and interpolating the initial conditions required for test two:
 
 The data provided is based on initial conditions therefore the data must show the concentration at each distance at t=0. These concentration values will be the initial theta values for test two. This task involved converting the provided data into a form that can be used in calculations.
