@@ -158,3 +158,20 @@ theta_NaNs_interpolated = theta_NaNs.interpolate(method='linear') #interpolating
 
 #based on test 2, this will be produced as the value for theta_old
 theta_old = theta_NaNs_interpolated.values.reshape(-1, 1) #putting theta_old into a form that can be used in calculations
+
+def animate(i):
+  plt.cla() #clear previous view
+  #here I would need data produced from calculations but for now I will use "theta.coming" as the array being produced from the calculation. This will be altered once calculation is added to main branch.
+  theta=theta_coming[i,:]
+  plt.plot(x, theta) #setting up plot
+  plt.xlim(x_start,x_end) #x axis limits defined ealier as provided by either the question or initial conditions.
+  plt.ylim(0,theta_coming.max()) #y axis limits from zero to the maximum value of theta from the calculations.
+  #graph labels
+  plt.xlabel("Distance (m)")
+  plt.ylabel("Concentration (μg/m³)")
+  plt.title("Modelling pollutant transport in a river")
+  #t counter
+  plt.annotate(f"t = {t[i]:.1f} s", xy=(0.05, 0.95), xycoords="axes fraction")
+
+anim = matplotlib.animation.FuncAnimation(fig, animate, frames=len(t))
+anim
