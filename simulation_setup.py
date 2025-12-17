@@ -64,11 +64,11 @@ def get_initial_conditions_from_csv():
 def configure_simulation(test_case_id):
 
     # Standard model defaults
-    L = 20.0
-    T = 300.0
-    dx = 0.2
-    dt = 1.0
-    c_velocity = 0.1
+    L = 20.0 # River length(m)
+    T = 300.0 # Duration(s)
+    dx = 0.2 # Space step(m)
+    dt = 1.0 # Time step(s)
+    c_velocity = 0.1 # River speed (m/s)
 
     # Domain Setup
     Nx = int(L / dx) + 1
