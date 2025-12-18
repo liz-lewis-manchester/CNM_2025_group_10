@@ -1,8 +1,8 @@
 Notes about our repository:
 
-CNM_Group_10_coursework.ipynb contains all our tests (what the instructions in this read me follows). Note, to see test 3 code you have to open directly with collab as opposed to just viewing in github.
+CNM_Group_10_coursework.ipynb contains all our tests (what the instructions in this read me follows). Note, to see test 3 code you have to open directly with collab as opposed to just viewing in github. Note not in notebook folder due to issues with loosing files.
 
-Copy_of_CNM_Group_10_coursework.ipynb contains our code in a notebook, without individual tests.
+Copy_of_CNM_Group_10_coursework.ipynb contains our code in a notebook, without individual tests. Note not in notebook folder due to issues with loosing files.
 
 model.py is our combined code in python form.
 
