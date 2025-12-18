@@ -6,7 +6,7 @@ Copy_of_CNM_Group_10_coursework.ipynb contains our code in a notebook, without i
 
 model.py is our combined code in python form.
 
-
+Other .py files are outdated and are no longer used in the model.
 
 
 
